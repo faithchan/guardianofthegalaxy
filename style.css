@@ -47,8 +47,16 @@ body {
 .countdown{
     font-family: 'Varela Round', sans-serif;
     font-size: 30px;
+    text-align: center;
     float: right;
-    margin: 70px;
+    margin-right: 50px;
+    margin-top: 60px;
+    background-image: url('images/countdown.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width:80px;
+    height:80px;
+    padding:22px 0px;
 
 }
 
