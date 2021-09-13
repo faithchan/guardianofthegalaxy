@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    font-family: 'Azeret Mono', monospace;
+}
+
+.wrapper {
+    width: 1024px;
+    height:512px;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('images/Bg1.png');
+    overflow: hidden;
+}
+
