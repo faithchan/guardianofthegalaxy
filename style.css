@@ -45,3 +45,11 @@ body {
 
 }
 
+.countdown{
+    font-family: 'Varela Round', sans-serif;
+    font-size: 30px;
+    float: right;
+    margin: 70px;
+
+}
+
