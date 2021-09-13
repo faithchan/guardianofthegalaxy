@@ -16,7 +16,32 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: url('images/Bg1.png');
+    background-image: url('images/Bg2.png');
     overflow: hidden;
+}
+
+.highscore {
+    font-family: 'Varela Round', sans-serif;
+    color: white;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.yourscore {
+    font-family: 'Varela Round', sans-serif;
+    color: white;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+
+
+.score{
+    font-family: moonhouse;
+    src: url(fonts/moonhouse.ttf);
+    font-size: 70px;
+    color:white;
+    margin-left: 50px;
+
 }
 
