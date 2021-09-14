@@ -63,8 +63,9 @@ body {
 .game {
     border: 2px solid black;
     width: 700px;
-    height: 300px;
+    height: 320px;
     margin: auto;
+    margin-top: -15px;
     z-index: 200;
     display: flex;
     flex-wrap: wrap;
@@ -72,7 +73,6 @@ body {
 
 
 .hole {
-    border: 3px solid red;
     flex: 1 0 33.33%;
     position: relative;
 }
@@ -83,7 +83,6 @@ In CSS, :after creates a pseudo-element that is the last child of the selected e
     content: '';
     display: block;
     background-image: url('images/hole.png') ;
-    
     position: absolute;
     width: 226px;
     height:70px;
@@ -94,12 +93,23 @@ In CSS, :after creates a pseudo-element that is the last child of the selected e
     background-position: bottom;
 }
 
-/* .mole{
+.alien{
     background-image: url('images/alien.png');
     position: absolute;
-    width: 30%;
-    height: 30%;
-    transition: 0.4s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(360px / 3);
+    height: 151px;
+    animation: animate 1s steps(3) infinite;
+}
 
+@keyframes animate {
+    from {
+        background-position: 0;
+    }
+    to{
+        background-position: 360px;
+    }
+}
 
-} */
