@@ -4,6 +4,26 @@
     box-sizing: border-box;
 }
 
+/* main.html */
+
+.wrapper2 {
+    width: 1024px;
+    height:512px;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('images/Bg1.png');
+    overflow: hidden;
+}
+
+
+
+
+
+
+/* index.html */
 body { 
     font-family: 'Azeret Mono', monospace;
     background-color: #EEC629;
