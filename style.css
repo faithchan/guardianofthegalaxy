@@ -60,3 +60,23 @@ body {
 
 }
 
+.game {
+    border: 2px solid black;
+    width: 700px;
+    height: 300px;
+    margin: 10px auto;
+    z-index: 200;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.hole {
+    border: 3px solid red;
+    flex: 1 0 33.33%
+}
+
+.mole{
+    background-image: url('images/alien.png');
+    
+}
