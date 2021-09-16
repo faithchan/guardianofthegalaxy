@@ -9,13 +9,15 @@
 </head>
 <body>
     
+
+    <!-- Landing Page -->
     <div class="mainPage">
 
         <audio id="background-audio" loop>
             <source src="soundtrack/wonderwomantheme.mp3" type="audio/mpeg">
         </audio>
-        <button id="audioBtn" onclick="playPause()" >
-            Sound on
+        <button class="audioBtn" onclick="playPause()" >
+            Sound On
             </button>
 
         <div class="buttonWrapper">
@@ -23,8 +25,52 @@
         <button id="instructionBtn" onclick="">INSTRUCTIONS</button>
         </div>
 
+        <!-- Modal Pop up -->
+        <div class="bg-modal">
+            <div class="instruction-modal">
+
+                
+            </div>
+
+
+        </div>
+    </div>
+
+
+<!-- Game Start -->
+    <div class="wrapper">
+        <div class="countdown">30</div>
+        <div class="highscore">highscore:</div>
+        <div class="yourscore">Your Score</div>
+        <div class="score">0</div>
+        <button class="startButton"></button>
+
+        <div class="game">
+        <div class="hole hole1">
+            <div class="alien"></div>
+        </div>
+        <div class="hole hole2">
+            <div class="alien"></div>
+        </div>
+        <div class="hole hole3">
+            <div class="alien"></div>
+        </div>
+        <div class="hole hole4">
+            <div class="alien"></div>
+        </div>
+        <div class="hole hole5">
+            <div class="alien"></div>
+        </div>
+        <div class="hole hole6">
+            <div class="alien"></div>
+        </div>
+        </div>
 
     </div>
-<script src="app.js"></script>    
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>    
+<script src="app.js"></script>   
+<script src="score.js"></script>    
+<script src="countdown.js"></script>   
+<script src="animateAlien.js"></script>   
 </body>
 </html>

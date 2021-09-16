@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+body { 
+    font-family: 'Azeret Mono', monospace;
+    background-color: #EEC629;
+}
 
 /* main.html */
 
@@ -57,18 +61,48 @@
     width: 700px;
     height: 50px;
     margin: auto;
-    margin-top: 230px;
+    margin-top: 280px;
     z-index: 200;
     text-align: center;
     flex-wrap: wrap;
 }
 
+.audioBtn{
+    background-color: #04AA6D;
+    color:white;
+    font-family: 'Azeret Mono', monospace;
+    border-radius:999px;
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    position: absolute;
+    bottom: 20px;
+/* try absolute, align self for flex or float left*/
+  }
+
+  .bg-modal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .instruction-modal{
+      width: 400px;
+      height: 360px;
+      background-image: url('images/instructions.png');
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-top: 20px;
+      margin-right: 50px;
+  }
+
 
 /* index.html */
-body { 
-    font-family: 'Azeret Mono', monospace;
-    background-color: #EEC629;
-}
 
 .wrapper {
     width: 1024px;
@@ -80,6 +114,7 @@ body {
     transform: translate(-50%, -50%);
     background-image: url('images/Bg2.png');
     overflow: hidden;
+    display: none;
 }
 
 .highscore {
@@ -167,7 +202,9 @@ In CSS, :after creates a pseudo-element that is the last child of the selected e
     transform: translate(-50%, -50%);
     width: calc(360px / 3);
     height: 151px;
+    z-index: 2;
     animation: animate 1s steps(3) infinite;
+    background-position: bottom;
 }
 
 @keyframes animate {
@@ -179,17 +216,10 @@ In CSS, :after creates a pseudo-element that is the last child of the selected e
     }
 }
 
-#audioBtn{
-    background-color: #04AA6D;
-    color:white;
-    font-family: 'Azeret Mono', monospace;
-    border-radius:999px;
-    width: 50px;
-    height: 50px;
-    margin-top: 10px;
-    margin-left: 10px;
+.hole.up .alien{
+    top:0;
+}
 
-/* try absolute, align self for flex or float left*/
-  }
+
 
 

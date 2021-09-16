@@ -12,6 +12,14 @@
     
     <div class="wrapper">
         <div class="countdown">30</div>
+        <div class="audio">
+            <audio id="background-audio" loop>
+                <source src="soundtrack/wonderwomantheme.mp3" type="audio/mpeg">
+            </audio>
+            <button id="audioBtn" onclick="playPause()" >
+                Sound on
+                </button>
+        </div>
         <div class="highscore">highscore:</div>
         <div class="yourscore">Your Score</div>
         <div class="score">0</div>
@@ -41,8 +49,5 @@
 
     </div>
 <script src="app.js"></script>
-<script src="animateAlien.js"></script>
-<script src="countdown.js"></script>
-<script src="score.js"></script>
 </body>
 </html>
