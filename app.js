@@ -15,4 +15,8 @@ const playPause = () => {
     }
 }
 
-//transition from main page to game page
+//Instructions
+document.getElementById('instructionBtn').addEventListener('click', function(){
+    document.querySelector('.bg-modal').style.display= 'flex';
+})
+
