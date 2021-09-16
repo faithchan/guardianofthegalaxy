@@ -9,9 +9,20 @@
 </head>
 <body>
     
-    <div class="wrapper2">
-        <a href="index.html"></a>
-        <button class="startBtn" onclick="">START</button>
+    <div class="mainPage">
+
+        <audio id="background-audio" loop>
+            <source src="soundtrack/wonderwomantheme.mp3" type="audio/mpeg">
+        </audio>
+        <button id="audioBtn" onclick="playPause()" >
+            Sound on
+            </button>
+
+        <div class="buttonWrapper">
+        <button id="startBtn" onclick="">START</button>
+        <button id="instructionBtn" onclick="">INSTRUCTIONS</button>
+        </div>
+
 
     </div>
 <script src="app.js"></script>    

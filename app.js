@@ -14,3 +14,5 @@ const playPause = () => {
         onOffBtn.innerHTML = "Sound On"
     }
 }
+
+//transition from main page to game page
