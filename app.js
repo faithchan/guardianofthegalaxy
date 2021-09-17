@@ -1,6 +1,6 @@
 // Audio
 var audio = document.getElementById('background-audio');
-var onOffBtn = document.getElementById('audioBtn');
+var onOffBtn = document.querySelector('.audioBtn');
 var count = 0;
 
 const playPause = () => {
@@ -20,3 +20,13 @@ document.getElementById('instructionBtn').addEventListener('click', function(){
     document.querySelector('.bg-modal').style.display= 'flex';
 })
 
+//Close Btn on Instructions
+document.querySelector('#closeBtn').addEventListener('click', function(){
+    document.querySelector('.bg-modal').style.display='none'
+})
+
+//Start Game
+document.getElementById('startBtn').addEventListener('click', function(){
+    document.querySelector('.mainPage').style.display= 'none';
+    document.querySelector('.wrapper').style.display= 'flex';
+})
