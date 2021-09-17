@@ -18,11 +18,13 @@ const playPause = () => {
 //Instructions
 document.getElementById('instructionBtn').addEventListener('click', function(){
     document.querySelector('.bg-modal').style.display= 'flex';
+   
 })
 
 //Close Btn on Instructions
 document.querySelector('#closeBtn').addEventListener('click', function(){
-    document.querySelector('.bg-modal').style.display='none'
+    document.querySelector('.bg-modal').style.display='none';
+    
 })
 
 //Start Game

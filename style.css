@@ -20,7 +20,7 @@ body {
     transform: translate(-50%, -50%);
     background-image: url('images/Bg1.png');
     overflow: hidden;
-    display:none;
+    display:flex;
 }
 
 #startBtn {
@@ -80,7 +80,6 @@ body {
     height: 50px;
     margin: auto;
     margin-top: 310px;
-    z-index: 200;
     text-align: center;
     flex-wrap: wrap;
 }
@@ -107,18 +106,17 @@ body {
     display:flex;
     justify-content: center;
     align-items: center;
-    display: none;
-  }
+    display: none;}
 
-  .instruction-modal{
-      width: 400px;
-      height: 360px;
-      background-image: url('images/instructions.png');
-      background-size: contain;
-      background-repeat: no-repeat;
-      margin-top: 20px;
-      margin-right: 50px;
-  }
+    .instruction-modal{
+        width: 400px;
+        height: 360px;
+        background-image: url('images/instructions.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: 20px;
+        margin-right: 50px;
+    }
 
   #closeBtn {
     align-items: center;
@@ -139,7 +137,7 @@ body {
 }
 
 
-/* index.html */
+/* game */
 
 .wrapper {
     width: 1024px;
@@ -151,7 +149,7 @@ body {
     transform: translate(-50%, -50%);
     background-image: url('images/Bg2.png');
     overflow: hidden;
-    /* display: none; */
+    display: none;
 }
 
 .highscore {
