@@ -14,14 +14,14 @@ function pickRandomHole(holes) {
 }
 
 //Add extra class to the currently selected hole
-function popOut(){
-    const time= Math.random()* 1300 + 400;
-    const hole = pickRandomHole(holes);
-    hole.classlist.add('up');
-    setTimeout(function(){
-        hole.classlist.remove('up')
-        if(!timeUp) popOut();
-    }, time)
-}
+// function popOut(){
+//     const time= Math.random()* 1300 + 400;
+//     const hole = pickRandomHole(holes);
+//     hole.classlist.add('up');
+//     setTimeout(function(){
+//         hole.classlist.remove('up')
+//         if(!timeUp) popOut();
+//     }, time)
+// }
 
-popOut();
+// popOut();

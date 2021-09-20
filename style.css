@@ -153,42 +153,42 @@ body {
 }
 
 .highscore {
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'Azeret Mono', monospace;
     color: white;
-    margin-left: 50px;
-    margin-top: -90px;
+  
 }
 
 .yourscore {
-    font-family: 'Varela Round', sans-serif;
-    color: white;
-    margin-left: 50px;
-    margin-top: 10px;
-}
+    font-family: 'Azeret Mono', monospace;
+    color: white;}
 
 .score{
     font-family: moonhouse;
     src: url(fonts/moonhouse.ttf);
     font-size: 70px;
     color:white;
-    margin-left: 50px;
-    display: block
+}
 
+.cdwrapper{
+    margin-left: auto; 
+    margin-right: 0;
+    padding: 50px;
 }
 
 .countdown{
-    font-family: 'Varela Round', sans-serif;
-    font-size: 30px;
-    text-align: center;
-    margin-top: 60px;
-    background-image: url('images/countdown.png');
-    background-size: contain;
-    background-repeat: no-repeat;
+   background-image: url('images/countdown.png');
+   background-repeat: no-repeat;
+   background-size: contain;
     width:80px;
     height:80px;
-    margin-left: 900px;
-    padding: 22px;
     
+}
+
+.timeLimit {
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    margin-top:-57px;  
+    font-size: 30px;     
 }
 
 .game {
@@ -251,9 +251,6 @@ In CSS, :after creates a pseudo-element that is the last child of the selected e
     }
 }
 
-.hole.up .alien{
-    top:0;
-}
 
 
 
