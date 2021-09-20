@@ -2,26 +2,27 @@ const aliens = document.querySelectorAll('.alien');
 const holes = document.querySelectorAll('.hole');
 const startButton = document.querySelector('#startBtn')
 let lastHole;
+
+
 //Pick Random hole and make sure it does not repeat
-function pickRandomHole(holes) { 
-    const randomHole = Math.floor(Math.random()*holes.length );
-    const hole = holes[randomHole];
-    if(hole === lastHole){
-        return pickRandomHole(holes)
+
+//get random time 
+function randomTime(min, max){
+    return Math.floor(Math.random()*(max-min)*min)
+}
+
+//pick a random hole for the alien to pop up and make sure it does not repeat
+//holes returns a node list of 6 holes, need to get a random index of this array
+function randomHole(holes){
+    const index = Math.floor(Math.random()*holes.length);
+    const hole = holes[index];
+    // the above gets a repeat hole since its 1 in 6 chances. 
+    if (hole == lastHole){
+        randomHole(holes)
+        console.log("Please rerun function")
     }
     lastHole = hole;
     return hole;
 }
 
-//Add extra class to the currently selected hole
-// function popOut(){
-//     const time= Math.random()* 1300 + 400;
-//     const hole = pickRandomHole(holes);
-//     hole.classlist.add('up');
-//     setTimeout(function(){
-//         hole.classlist.remove('up')
-//         if(!timeUp) popOut();
-//     }, time)
-// }
-
-// popOut();
+//get aliens to pop out randomly

@@ -251,6 +251,9 @@ In CSS, :after creates a pseudo-element that is the last child of the selected e
     }
 }
 
+.hole.up .alien {
+    top: 0;
+  }
 
 
 
