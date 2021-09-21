@@ -2,8 +2,8 @@ const aliens = document.querySelectorAll('.alien');
 const holes = document.querySelectorAll('.hole');
 const startButton = document.querySelector('#startBtn')
 let lastHole;
-const yourScore = document.querySelector('.yourscore')
-let gameScore = 0;
+const yourScore = document.querySelector('.score')
+let score =0;
 
 
 //Pick Random hole and make sure it does not repeat
@@ -37,4 +37,21 @@ function alienPopOut(){
     },time)
 }
 
-// Start Game
+// Start Game Function
+function startGame(){
+    yourScore.textContent = 0;
+    countTime = 30;
+    score = 0;
+    alienPopOut();
+    setTimeout(()=>{countTime==0, 30000})
+}
+
+//add score each time alien is hit
+function alienKilled(e) {
+if(!e.isTrusted)return;
+score += 5;
+this.classList.remove('up');
+yourScore.textContent = score;
+}
+
+aliens.forEach(mole => mole.addEventListener('click', alienKilled));
