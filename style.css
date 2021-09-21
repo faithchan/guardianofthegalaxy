@@ -152,6 +152,10 @@ body {
     display: none;
 }
 
+
+.scorewrapper{
+    margin: 50px;
+}
 .highscore {
     font-family: 'Azeret Mono', monospace;
     color: white;
