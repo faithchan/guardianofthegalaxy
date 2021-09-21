@@ -6,26 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guardian of The Galaxy</title>
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
     
+
+    <!-- Landing Page -->
+    <div class="mainPage">
+
+        <audio id="background-audio" loop>
+            <source src="soundtrack/wonderwomantheme.mp3" type="audio/mpeg">
+        </audio>
+        <button class="audioBtn" onclick="playPause()" >
+            Sound On
+            </button>
+
+        <div class="buttonWrapper">
+        <button id="startBtn" onclick="">START</button>
+        <button id="instructionBtn">INSTRUCTIONS</button>
+        </div>
+
+         <!-- Modal Pop up -->
+         <div class="bg-modal">
+            <div class="instruction-modal">
+             <h1 class="howToPlay">How To<br>Play</h1>   
+             <p class="textInstructions">Our galaxy is under attack
+                and we need your help.
+                I’ve equipped your clicks
+                with laser strong enough to
+                kill our enemies. Now let’s
+                start guarding our territory. </p>
+                <button id="closeBtn" onclick="">CLOSE</button>
+            </div>
+            </div>
+            <!-- Modal Pop up end -->
+
+    </div>
+
+
+
+<!-- Game Start -->
     <div class="wrapper">
-        <div class="countdown">
-            <p class="timeLimit">30</p>
+        <div class="scorewrapper">
+            <div class="highscore">Highscore:</div>
+            <div class="yourscore">Your Score</div>
+            <div class="score">0</div>
         </div>
-        <div class="audio">
-            <audio id="background-audio" loop>
-                <source src="soundtrack/wonderwomantheme.mp3" type="audio/mpeg">
-            </audio>
-            <button id="audioBtn" onclick="playPause()" >
-                Sound on
-                </button>
-        </div>
-        <div class="highscore">highscore:</div>
-        <div class="yourscore">Your Score</div>
-        <div class="score">0</div>
-        <button class="startButton"></button>
+
+        <div class="cdwrapper">
+            <div class="countdown"></div>
+                <p class="timeLimit">30</p>
+                    </div>
 
         <div class="game">
         <div class="hole hole1">
@@ -48,8 +78,10 @@
         </div>
         </div>
 
-
     </div>
-<script src="app.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>    
+<script src="app.js"></script>      
+<script src="countdown.js"></script>   
+<script src="animateAlien.js"></script>   
 </body>
 </html>

@@ -2,8 +2,6 @@ const aliens = document.querySelectorAll('.alien');
 const holes = document.querySelectorAll('.hole');
 const startButton = document.querySelector('#startBtn')
 let lastHole;
-
-//score
 const yourScore = document.querySelector('.yourscore')
 let gameScore = 0;
 
