@@ -214,6 +214,7 @@ body {
 
 .hole {
     flex: 1 0 33.33%;
+    overflow: hidden;
     position: relative;
 }
 
@@ -236,7 +237,7 @@ In CSS, :after creates a pseudo-element that is the last child of the selected e
 .alien{
     background-image: url('images/alien.png');
     position: absolute;
-    top: 50%;
+    top: 150%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: calc(360px / 3);
@@ -244,6 +245,7 @@ In CSS, :after creates a pseudo-element that is the last child of the selected e
     z-index: 2;
     animation: animate 1s steps(3) infinite;
     background-position: bottom;
+    transition: all 0.4s;
 }
 
 @keyframes animate {
@@ -256,7 +258,7 @@ In CSS, :after creates a pseudo-element that is the last child of the selected e
 }
 
 .hole.up .alien {
-    top: 0;
+    top: 50%;
   }
 
 
