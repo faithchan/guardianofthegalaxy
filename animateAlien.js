@@ -35,7 +35,8 @@ function alienPopOut(){
     const hole = randomHole(holes);
     hole.classList.add('up');
     setTimeout(()=>{hole.classList.remove('up');
-    alienPopOut();
+    if(countTime !== 0)alienPopOut();
     },time)
-
 }
+
+// Start Game
