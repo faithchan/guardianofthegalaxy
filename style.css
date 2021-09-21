@@ -205,7 +205,6 @@ body {
     height: 320px;
     margin: auto;
     margin-top: 50px;
-    z-index: 200;
     display: flex;
     flex-wrap: wrap;
     
