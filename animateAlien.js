@@ -29,7 +29,7 @@ function randomHole(holes){
 
 //get aliens to pop out randomly
 function alienPopOut(){
-    const time = randomTime (200, 1000);
+    const time = randomTime (2000, 3000);
     const hole = randomHole(holes);
     hole.classList.add('up');
     setTimeout(()=>{hole.classList.remove('up');
@@ -52,6 +52,7 @@ if(!e.isTrusted)return;
 score += 5;
 this.classList.remove('up');
 yourScore.textContent = score;
+console.log(aliens);
 }
 
-aliens.forEach(mole => mole.addEventListener('click', alienKilled));
+aliens.forEach(alien => alien.addEventListener('click', alienKilled));

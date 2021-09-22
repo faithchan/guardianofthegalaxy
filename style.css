@@ -226,7 +226,6 @@ In CSS, :after creates a pseudo-element that is the last child of the selected e
     position: absolute;
     width: 226px;
     height:70px;
-    z-index: 2;
     bottom:-10px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -253,8 +252,7 @@ In CSS, :after creates a pseudo-element that is the last child of the selected e
     }
     to{
         background-position: 360px;
-    }
-}
+    }}
 
 .hole.up .alien {
     top: 50%;
