@@ -4,26 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guardian of The Galaxy</title>
+    <title>🚀 Guardian of The Galaxy</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
-
+    <div class="document">
     <!-- Landing Page -->
     <div class="mainPage">
-
-        <audio id="background-audio" loop>
+        <!-- <audio id="background-audio" loop>
             <source src="soundtrack/wonderwomantheme.mp3" type="audio/mpeg">
-        </audio>
-        <button class="audioBtn" onclick="playPause()" >
-            Sound On
-            </button>
-
+                </audio>
+                    <button class="audioBtn" onclick="playPause()" >
+                        Sound On
+                            </button> -->
         <div class="buttonWrapper">
         <button id="startBtn" onclick="startGame()">START</button>
         <button id="instructionBtn">INSTRUCTIONS</button>
-        </div>
+    </div>
 
          <!-- Modal Pop up -->
          <div class="bg-modal">
@@ -41,14 +39,13 @@
             <!-- Modal Pop up end -->
 
     </div>
-
-
+        
 
 <!-- Game Start -->
     <div class="wrapper">
         <div class="scorewrapper">
-            <div class="highscore">Highscore:</div>
-            <div class="yourscore">Your Score</div>
+            <div class="highscore">🏆 Highscore:</div>
+            <div class="yourscore">👽 Your Score</div>
             <div class="score">0</div>
         </div>
 
@@ -79,6 +76,16 @@
         </div>
 
     </div>
+
+    <div class="sound">
+        <audio id="background-audio" loop>
+            <source src="soundtrack/wonderwomantheme.mp3" type="audio/mpeg">
+                </audio>
+                    <button class="audioBtn" onclick="playPause()" >
+                        Sound On
+                            </button>
+    </div>
+</div>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>    
 <script src="app.js"></script>      
 <script src="countdown.js"></script>   

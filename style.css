@@ -8,6 +8,17 @@ body {
     background-color: #EEC629;
 }
 
+.document{
+    width: 1024px;
+    height:512px;
+    position: relative;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 5%;
+}
+
+
+
 /* main.html */
 
 .mainPage {
@@ -91,9 +102,10 @@ body {
     border-radius:999px;
     width: 50px;
     height: 50px;
-    margin-left: 20px;
     position: absolute;
-    bottom: 20px;
+    bottom: 50px;
+    left:50px;
+    
 /* try absolute, align self for flex or float left*/
   }
 

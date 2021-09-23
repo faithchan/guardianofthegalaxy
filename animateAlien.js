@@ -6,8 +6,6 @@ const yourScore = document.querySelector('.score')
 let score =0;
 
 
-//Pick Random hole and make sure it does not repeat
-
 //get random time 
 function randomTime(min, max){
     return Math.floor(Math.random()*(max-min)+min)
@@ -29,7 +27,7 @@ function randomHole(holes){
 
 //get aliens to pop out randomly
 function alienPopOut(){
-    const time = randomTime (2000, 3000);
+    const time = randomTime (1000, 2000);
     const hole = randomHole(holes);
     hole.classList.add('up');
     setTimeout(()=>{hole.classList.remove('up');
