@@ -5,6 +5,7 @@ function updateCountdown() {
     countdown.innerHTML = countTime;
     countTime --;
     countTime = countTime < 0 ? 0 : countTime; 
+    checkHighScore();
 };
 
 updateCount =()=> setInterval(updateCountdown, 1000);

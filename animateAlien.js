@@ -41,16 +41,37 @@ function startGame(){
     countTime = 30;
     score = 0;
     alienPopOut();
-    setTimeout(()=>{countTime==0, 30000})
+    setTimeout(()=>{countTime==0, 30000});
+    checkHighScore() ;
 }
 
 //add score each time alien is hit
 function alienKilled(e) {
-if(!e.isTrusted)return;
 score += 5;
 this.classList.remove('up');
+this.parentElement.classList.remove('up');
 yourScore.textContent = score;
-console.log(aliens);
+console.log(this);
 }
 
 aliens.forEach(alien => alien.addEventListener('click', alienKilled));
+
+//If countTime reaches zero, display times up div with replay button or back to main page
+// function timesUp(){
+//     if(countTime ==0 ){
+
+//     }
+// }
+
+//Local Storage
+const highScoreDisplay = document.querySelector('.highscore');
+let highScore = localStorage.getItem('best') || 0;
+highScoreDisplay.textContent = `🏆 Highscore: ${highScore}`
+
+function checkHighScore() {
+    if(score > localStorage.getItem('best')){
+        highScore = score;
+        localStorage.setItem('best', highScore);
+        highScoreDisplay.textContent = `🏆 Highscore: ${highScore}`;  
+    }
+}

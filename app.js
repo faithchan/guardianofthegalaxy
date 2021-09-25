@@ -32,3 +32,5 @@ document.getElementById('startBtn').addEventListener('click', function(){
     document.querySelector('.mainPage').style.display= 'none';
     document.querySelector('.wrapper').style.display= 'flex';
 })
+
+// Replay Button - run startGame function 
