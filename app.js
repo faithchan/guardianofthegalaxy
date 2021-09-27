@@ -17,14 +17,12 @@ const playPause = () => {
 
 //Instructions
 document.getElementById('instructionBtn').addEventListener('click', function(){
-    document.querySelector('.bg-modal').style.display= 'flex';
-   
+    document.querySelector('.bg-modal').style.display= 'flex';  
 })
 
 //Close Btn on Instructions
 document.querySelector('#closeBtn').addEventListener('click', function(){
     document.querySelector('.bg-modal').style.display='none';
-    
 })
 
 //Start Game
@@ -34,3 +32,10 @@ document.getElementById('startBtn').addEventListener('click', function(){
 })
 
 // Replay Button - run startGame function 
+document.getElementById('replayBtn').addEventListener('click', function(){
+    startGame();
+    document.querySelector('.timesUp-modal').style.display = 'none'
+    document.querySelector('.mainPage').style.display= 'none';
+    document.querySelector('.wrapper').style.display= 'flex';
+})
+

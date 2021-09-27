@@ -104,7 +104,6 @@ body {
     bottom: 50px;
     left:50px;
     
-/* try absolute, align self for flex or float left*/
   }
 
   .bg-modal{
@@ -279,19 +278,28 @@ In CSS, :after creates a pseudo-element that is the last child of the selected e
     display:flex;
     justify-content: center;
     align-items: center;
+    display:none;
   }
 
   .score-modal{
-    width: 400px;
-    height: 360px;
-    background-image: url('images/instructions.png');
+    width: 600px;
+    height: 400px;
+    background-image: url('images/gameover.png');
     background-size: contain;
     background-repeat: no-repeat;
-    margin-top: 20px;
-    margin-right: 50px;
+    margin-left: 50px;
+
   }
 
-  #replayBtn{
+  .buttonWrapper2{
+    width: 530px;
+    height: 50px;
+    margin-top: 1px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+  #replayBtn {
     background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
     font-family: moonhouse;
     src: url(fonts/moonhouse.ttf);
@@ -301,8 +309,40 @@ In CSS, :after creates a pseudo-element that is the last child of the selected e
     min-width: 70px;
     padding: 10px 15px;
     margin-top: 20px;
-    margin-left: 170px;
+    margin-left: 10px;
     cursor: pointer;
     filter: drop-shadow(5px 5px 1px rgba(0, 0, 0, 0.25));  }
 
 
+    #mainBtn {
+        background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+        font-family: moonhouse;
+        src: url(fonts/moonhouse.ttf);
+        border-radius: 815px;
+        color: #FFFFFF;
+        max-width: 100%;
+        min-width: 70px;
+        padding: 10px 15px;
+        margin-top: 20px;
+        margin-left: 10px;
+        cursor: pointer;
+        filter: drop-shadow(5px 5px 1px rgba(0, 0, 0, 0.25));  }
+    
+        
+        .endGame{
+            font-family: moonhouse;
+            src: url(fonts/moonhouse.ttf);
+            color: white;
+            margin-top: 180px;
+            margin-left: -70px;
+            text-align: center;
+            font-size: 30px;
+    
+        }
+
+        .textEndGame{
+            text-align: center;
+            margin-right: 70px;
+            margin-top: 15px;
+            color:white;
+        }

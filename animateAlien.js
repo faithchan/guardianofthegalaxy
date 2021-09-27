@@ -1,8 +1,8 @@
 const aliens = document.querySelectorAll('.alien');
 const holes = document.querySelectorAll('.hole');
-const startButton = document.querySelector('#startBtn')
+const startButton = document.querySelector('#startBtn');
+const yourScore = document.querySelector('.score');
 let lastHole;
-const yourScore = document.querySelector('.score')
 let score =0;
 
 
@@ -42,26 +42,20 @@ function startGame(){
     score = 0;
     alienPopOut();
     setTimeout(()=>{countTime==0, 30000});
-    checkHighScore() ;
+    
 }
 
-//add score each time alien is hit
+//add score each time alien is clicked
 function alienKilled(e) {
-score += 5;
-this.classList.remove('up');
-this.parentElement.classList.remove('up');
-yourScore.textContent = score;
-console.log(this);
+    score += 5;
+    this.classList.remove('up');
+    this.parentElement.classList.remove('up');
+    yourScore.textContent = score;
+    console.log(this);
 }
 
 aliens.forEach(alien => alien.addEventListener('click', alienKilled));
 
-//If countTime reaches zero, display times up div with replay button or back to main page
-// function timesUp(){
-//     if(countTime ==0 ){
-
-//     }
-// }
 
 //Local Storage
 const highScoreDisplay = document.querySelector('.highscore');
@@ -72,6 +66,14 @@ function checkHighScore() {
     if(score > localStorage.getItem('best')){
         highScore = score;
         localStorage.setItem('best', highScore);
-        highScoreDisplay.textContent = `🏆 Highscore: ${highScore}`;  
+        highScoreDisplay.textContent = `🏆 Highscore: ${highScore}`;
+
     }
 }
+
+//gameover
+function gameOver(){
+    if( countTime == 0){
+    document.querySelector('.timesUp-modal').style.display = 'flex'}}
+
+    
