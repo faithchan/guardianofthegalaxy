@@ -63,17 +63,33 @@ let highScore = localStorage.getItem('best') || 0;
 highScoreDisplay.textContent = `🏆 Highscore: ${highScore}`
 
 function checkHighScore() {
+    console.log(score)
+    console.log(localStorage.getItem('best'))
     if(score > localStorage.getItem('best')){
         highScore = score;
         localStorage.setItem('best', highScore);
         highScoreDisplay.textContent = `🏆 Highscore: ${highScore}`;
-
+        document.querySelector('.endGame').textContent = "Highscore";
+        document.querySelector('.textEndGame').innerHTML= `You scored ${highScore} points! <br>
+        Thank you for guarding<br>
+        our galaxy.`;
     }
+    else{
+        document.querySelector('.endGame').textContent = "Great Job";
+        document.querySelector('.textEndGame').innerHTML= `You scored ${score} points! <br>
+        Thank you for guarding<br>
+        our galaxy.`;
+    }
+
+
 }
 
 //gameover
 function gameOver(){
-    if( countTime == 0){
-    document.querySelector('.timesUp-modal').style.display = 'flex'}}
+    if(countTime === 0){
+    document.querySelector('.timesUp-modal').style.display = 'flex';
+    checkHighScore();
+    clearInterval(updateC);
+}
+}
 
-    

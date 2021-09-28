@@ -2,6 +2,7 @@
 var audio = document.getElementById('background-audio');
 var onOffBtn = document.querySelector('.audioBtn');
 var count = 0;
+let updateC;
 
 const playPause = () => {
     if (count == 0){
@@ -34,8 +35,16 @@ document.getElementById('startBtn').addEventListener('click', function(){
 // Replay Button - run startGame function 
 document.getElementById('replayBtn').addEventListener('click', function(){
     startGame();
+    updateCount();
     document.querySelector('.timesUp-modal').style.display = 'none'
     document.querySelector('.mainPage').style.display= 'none';
     document.querySelector('.wrapper').style.display= 'flex';
 })
+
+//Back to Main page 
+// document.getElementById('mainBtn').addEventListener('click', function(){
+//     document.querySelector('.timesUp-modal').style.display = 'none';
+//     document.querySelector('.wrapper').style.display= 'none';
+//     document.querySelector('.mainPage').style.display= 'flex';
+// });
 

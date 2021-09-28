@@ -14,7 +14,7 @@ body {
     position: relative;
     margin-left: auto;
     margin-right:auto;
-    margin-top: 5%;
+    margin-top: 8%;
 }
 
 /* main.html */
@@ -216,7 +216,6 @@ body {
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
-    
 }
 
 

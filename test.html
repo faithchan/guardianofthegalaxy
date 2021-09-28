@@ -10,35 +10,29 @@
 </head>
 <body>
     
-    <div class="document">
+<div class="document">
         
     <!-- Landing Page -->
     <div class="mainPage">
-        <!-- <audio id="background-audio" loop>
-            <source src="soundtrack/wonderwomantheme.mp3" type="audio/mpeg">
-                </audio>
-                    <button class="audioBtn" onclick="playPause()" >
-                        Sound On
-                            </button> -->
         <div class="buttonWrapper">
-        <button id="startBtn" onclick="startGame()">START</button>
-        <button id="instructionBtn">INSTRUCTIONS</button>
-    </div>
+            <button id="startBtn" onclick="startGame()">START</button>
+            <button id="instructionBtn">INSTRUCTIONS</button>
+        </div>
 
-         <!-- Modal Pop up -->
-         <div class="bg-modal">
-            <div class="instruction-modal">
-             <h1 class="howToPlay">How To<br>Play</h1>   
-             <p class="textInstructions">Our galaxy is under attack
-                and we need your help.
-                I’ve equipped your clicks
-                with laser strong enough to
-                kill our enemies. Now let’s
-                start guarding our territory. </p>
-                <button id="closeBtn" onclick="">CLOSE</button>
-            </div>
-            </div>
-            <!-- Modal Pop up end -->
+    <!-- Modal Pop up -->
+    <div class="bg-modal">
+        <div class="instruction-modal">
+        <h1 class="howToPlay">How To<br>Play</h1>   
+        <p class="textInstructions">Our galaxy is under attack
+            and we need your help.
+            I’ve equipped your clicks
+            with laser strong enough to
+            kill our enemies. Now let’s
+            start guarding our territory. </p>
+        <button id="closeBtn" onclick="">CLOSE</button>
+        </div>
+    </div>
+    <!-- Modal Pop up end -->
 
     </div>
         
@@ -54,60 +48,56 @@
         <div class="cdwrapper">
             <div class="countdown"></div>
                 <p class="timeLimit">30</p>
-                    </div>
+        </div>
 
         <div class="game">
-        <div class="hole hole1">
-            <div class="alien"></div>
+            <div class="hole hole1">
+                <div class="alien"></div>
+            </div>
+            <div class="hole hole2">
+                <div class="alien"></div>
+            </div>
+            <div class="hole hole3">
+                <div class="alien"></div>
+            </div>
+            <div class="hole hole4">
+                <div class="alien"></div>
+            </div>
+            <div class="hole hole5">
+                <div class="alien"></div>
+            </div>
+            <div class="hole hole6">
+                <div class="alien"></div>
+            </div>
         </div>
-        <div class="hole hole2">
-            <div class="alien"></div>
-        </div>
-        <div class="hole hole3">
-            <div class="alien"></div>
-        </div>
-        <div class="hole hole4">
-            <div class="alien"></div>
-        </div>
-        <div class="hole hole5">
-            <div class="alien"></div>
-        </div>
-        <div class="hole hole6">
-            <div class="alien"></div>
-        </div>
-        </div>
-
     </div>
-
+<!-- end of Game start -->
 
 <!-- sound -->
     <div class="sound">
         <audio id="background-audio" loop>
             <source src="soundtrack/wonderwomantheme.mp3" type="audio/mpeg">
-                </audio>
-                    <button class="audioBtn" onclick="playPause()" >
-                        Sound On
-                            </button>
+        </audio>
+            <button class="audioBtn" onclick="playPause()" >
+                Sound On
+            </button>
     </div>
 <!-- end of sound -->
 
 <!-- Times up modal display -->
-<div class="timesUp-modal">
-    <div class="score-modal">
-     <h1 class="endGame">Great Job</h1>   
-     <p class="textEndGame">You scored 50 points. <br>
-        Thank you for guarding<br>
-        our galaxy! </p>
-        <div class="buttonWrapper2">
-            <button id="mainBtn" onclick="">Home</button>
-            <button id="replayBtn" onclick="">Replay</button>
-        </div>
+    <div class="timesUp-modal">
+        <div class="score-modal">
+            <h1 class="endGame"></h1>   
+            <p class="textEndGame"></p>
+            <div class="buttonWrapper2">
+                <!-- <button id="mainBtn" onclick="">Home</button> -->
+                <button id="replayBtn" onclick="">Replay</button>
+            </div>
     </div>
-    </div>
+</div>
 
 
 </div>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>    
 <script src="app.js"></script>      
 <script src="countdown.js"></script>   
 <script src="animateAlien.js"></script>   
