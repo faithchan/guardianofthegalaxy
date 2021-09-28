@@ -42,9 +42,10 @@ document.getElementById('replayBtn').addEventListener('click', function(){
 })
 
 //Back to Main page 
-// document.getElementById('mainBtn').addEventListener('click', function(){
-//     document.querySelector('.timesUp-modal').style.display = 'none';
-//     document.querySelector('.wrapper').style.display= 'none';
-//     document.querySelector('.mainPage').style.display= 'flex';
-// });
+document.getElementById('mainBtn').addEventListener('click', function(){
+    countdown.textContent = 30;
+    document.querySelector('.timesUp-modal').style.display = 'none';
+    document.querySelector('.wrapper').style.display= 'none';
+    document.querySelector('.mainPage').style.display= 'flex';
+});
 
