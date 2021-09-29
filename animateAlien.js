@@ -4,6 +4,8 @@ const startButton = document.querySelector('#startBtn');
 const yourScore = document.querySelector('.score');
 let lastHole;
 let score =0;
+var laserSound = new Audio();
+laserSound.src = "soundtrack/lasergun.mp3"
 
 
 //get random time 
@@ -48,6 +50,7 @@ function startGame(){
 //add score each time alien is clicked
 function alienKilled(e) {
     score += 5;
+    laserSound.play();
     this.classList.remove('up');
     this.parentElement.classList.remove('up');
     yourScore.textContent = score;
