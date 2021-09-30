@@ -36,8 +36,19 @@ Sprite Sheets - Game Developer Studio
 * Each kill is 5 points added to scoreboard. Kill as many to reach highscore.
 
 ## UI Design and Game flow
-1. The landing page has 3 functions, to view instructions of game, turn on audio and prepare for the game start <br>
-<img src="images/UI1.png" width="500px"/><br>
+1. The landing page has 3 functions for player to interact with - to view instructions of game, turn on audio and prepare for the game start. <br>
+<br>
+<img src="images/UI1.png" width="600px"/><br>
+<img src="images/UI2.png" width="600px"/><br>
+
+2. When the player clicks on the start button, he/she will be directed to the game page and the countdown timer will start counting down from 30 seconds. At the same time, aliens will be activated and player must click on the aliens to gain points. <br>
+<br>
+<img src="images/UI3.png" width="600px"/><br>
+
+3. Once the player ends the game, header of the modal will either pop up "Great Job" (This means player did not achieve highscore) and "Highscore" (This means player has achieved highscore).<br>
+<br>
+<img src="images/UI4.png" width="600px"/><br>
+
 
 
 
