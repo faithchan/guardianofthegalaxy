@@ -28,8 +28,9 @@ Sprite Sheets - Game Developer Studio
 
 ## Difficulties 
 * Getting the modal to pop up when timer hits zero, my placement of the function was not in desired sequence so the modal kept popping up at when the timer is at 1 second.
-* Getting the css to display all the elements nicely, had to wrap many elements in a div and style the divs first.
-* The codes in my js were getting a little hard to find. I should have stored all the variables in 1 file and work on a split screen with the variables always visible so I know which has been created.
+* Getting the css to display all the elements nicely, had to wrap many elements in a div and style the divs first. The position: absolute & display: flex attribute was crucial in the css.
+* The codes in my js were getting a little hard to find. It is better to have stored all the variables in 1 file.
+* Getting the alien to log the score when killed. Realise holes overlapped the alien in z-index so some of the aliens were not clickable. After that, had to consider pushing the alien down after a click but after clearing and rerun of function, alien might pop up from same hole.
 
 ## Game Instructions
 * Kill as many Aliens within 30 seconds
@@ -51,7 +52,7 @@ Sprite Sheets - Game Developer Studio
 
 ## Additional Features Considered
 * Enter Name and get instructions to display msg directed to name entered.
-* Have different aliens, Alien bosses killed can have more points added to scoreboard.
+* Have different aliens, alien bosses killed can have more points added to scoreboard.
 * Have more levels, including guardians as the pop up where if player accidentally shoots them, they will have score deducted from scoreboard.
 
 
