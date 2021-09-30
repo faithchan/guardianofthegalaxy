@@ -1,8 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 body { 
     font-family: 'Azeret Mono', monospace;
     background-color: #EEC629;
@@ -17,7 +12,7 @@ body {
     margin-top: 8%;
 }
 
-/* main.html */
+/* Landing Page */
 
 .mainPage {
     width: 1024px;
@@ -30,6 +25,15 @@ body {
     background-image: url('images/Bg1.png');
     overflow: hidden;
     display:flex;
+}
+
+.buttonWrapper{
+    width: 700px;
+    height: 50px;
+    margin: auto;
+    margin-top: 310px;
+    text-align: center;
+    flex-wrap: wrap;
 }
 
 #startBtn {
@@ -65,6 +69,41 @@ body {
     margin-inline-start: 20px;
 }
 
+.audioBtn{
+    background-color: #04AA6D;
+    color:white;
+    font-family: 'Azeret Mono', monospace;
+    border-radius:999px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 50px;
+    left:50px; 
+  }
+
+/* Instructions Modal */
+.bg-modal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.instruction-modal{
+    width: 400px;
+    height: 360px;
+    background-image: url('images/instructions.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    margin-right: 50px;
+}
+
 .howToPlay{
     font-family: moonhouse;
     src: url(fonts/moonhouse.ttf);
@@ -73,7 +112,7 @@ body {
     margin-left: 75px;
     text-align: center;
 }
-
+    
 .textInstructions{
     font-family: 'Azeret Mono', monospace;
     color: white;
@@ -84,50 +123,7 @@ body {
     text-align: center;
 }
 
-.buttonWrapper{
-    width: 700px;
-    height: 50px;
-    margin: auto;
-    margin-top: 310px;
-    text-align: center;
-    flex-wrap: wrap;
-}
-
-.audioBtn{
-    background-color: #04AA6D;
-    color:white;
-    font-family: 'Azeret Mono', monospace;
-    border-radius:999px;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    bottom: 50px;
-    left:50px;
-    
-  }
-
-  .bg-modal{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    position: absolute;
-    top: 0;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    display: none;}
-
-    .instruction-modal{
-        width: 400px;
-        height: 360px;
-        background-image: url('images/instructions.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        margin-top: 20px;
-        margin-right: 50px;
-    }
-
-  #closeBtn {
+#closeBtn {
     align-items: center;
     background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
     font-family: moonhouse;
@@ -145,8 +141,7 @@ body {
     filter: drop-shadow(5px 5px 1px rgba(0, 0, 0, 0.25));  
 }
 
-
-/* game */
+/* Game Start */
 
 .wrapper {
     width: 1024px;
@@ -161,19 +156,19 @@ body {
     display: none;
 }
 
-
+/* Anything related to score */
 .scorewrapper{
     margin: 50px;
 }
 .highscore {
     font-family: 'Azeret Mono', monospace;
     color: white;
-  
 }
 
 .yourscore {
     font-family: 'Azeret Mono', monospace;
-    color: white;}
+    color: white;
+}
 
 .score{
     font-family: moonhouse;
@@ -182,6 +177,7 @@ body {
     color:white;
 }
 
+/* countdown */
 .cdwrapper{
     margin-left: auto; 
     margin-right: 0;
@@ -194,7 +190,6 @@ body {
    background-size: contain;
     width:80px;
     height:80px;
-    
 }
 
 .timeLimit {
@@ -204,8 +199,8 @@ body {
     font-size: 30px;     
 }
 
+/* House Alien and holes */
 .game {
-    /* border: 2px solid black; */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -267,7 +262,7 @@ In CSS, :after creates a pseudo-element that is the last child of the selected e
   }
 
 
-  /* Game Ends */
+  /* Game Ends, Time's up modal */
   .timesUp-modal{
     width: 100%;
     height: 100%;
@@ -290,7 +285,25 @@ In CSS, :after creates a pseudo-element that is the last child of the selected e
 
   }
 
-  .buttonWrapper2{
+  .endGame{
+    font-family: moonhouse;
+    src: url(fonts/moonhouse.ttf);
+    color: white;
+    margin-top: 180px;
+    margin-left: -70px;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.textEndGame{
+    text-align: center;
+    margin-right: 70px;
+    margin-top: 15px;
+    color:white;
+}
+
+.buttonWrapper2{
     width: 530px;
     height: 50px;
     margin-top: 1px;
@@ -298,7 +311,7 @@ In CSS, :after creates a pseudo-element that is the last child of the selected e
     flex-wrap: wrap;
 }
 
-  #replayBtn {
+#replayBtn {
     background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
     font-family: moonhouse;
     src: url(fonts/moonhouse.ttf);
@@ -310,38 +323,22 @@ In CSS, :after creates a pseudo-element that is the last child of the selected e
     margin-top: 20px;
     margin-left: 10px;
     cursor: pointer;
-    filter: drop-shadow(5px 5px 1px rgba(0, 0, 0, 0.25));  }
+    filter: drop-shadow(5px 5px 1px rgba(0, 0, 0, 0.25));  
+}
 
 
-    #mainBtn {
-        background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
-        font-family: moonhouse;
-        src: url(fonts/moonhouse.ttf);
-        border-radius: 815px;
-        color: #FFFFFF;
-        max-width: 100%;
-        min-width: 70px;
-        padding: 10px 15px;
-        margin-top: 20px;
-        margin-left: 10px;
-        cursor: pointer;
-        filter: drop-shadow(5px 5px 1px rgba(0, 0, 0, 0.25));  }
+#mainBtn {
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    font-family: moonhouse;
+    src: url(fonts/moonhouse.ttf);
+    border-radius: 815px;
+    color: #FFFFFF;
+    max-width: 100%;
+    min-width: 70px;
+    padding: 10px 15px;
+    margin-top: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    filter: drop-shadow(5px 5px 1px rgba(0, 0, 0, 0.25));  
+}
     
-        
-        .endGame{
-            font-family: moonhouse;
-            src: url(fonts/moonhouse.ttf);
-            color: white;
-            margin-top: 180px;
-            margin-left: -70px;
-            text-align: center;
-            font-size: 30px;
-    
-        }
-
-        .textEndGame{
-            text-align: center;
-            margin-right: 70px;
-            margin-top: 15px;
-            color:white;
-        }

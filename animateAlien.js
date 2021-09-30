@@ -43,8 +43,7 @@ function startGame(){
     countTime = 30;
     score = 0;
     alienPopOut();
-    setTimeout(()=>{countTime==0, 30000});
-    
+    setTimeout(()=>{countTime==0, 30000}); 
 }
 
 //add score each time alien is clicked
@@ -83,8 +82,6 @@ function checkHighScore() {
         Thank you for guarding<br>
         our galaxy.`;
     }
-
-
 }
 
 //gameover
@@ -93,6 +90,6 @@ function gameOver(){
     document.querySelector('.timesUp-modal').style.display = 'flex';
     checkHighScore();
     clearInterval(updateC);
-}
+    }
 }
 
