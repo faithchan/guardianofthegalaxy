@@ -29,7 +29,7 @@ function randomHole(holes){
 
 //get aliens to pop out randomly
 function alienPopOut(){
-    const time = randomTime (500, 1500);
+    const time = randomTime (1000, 2000);
     const hole = randomHole(holes);
     hole.classList.add('up');
     setTimeout(()=>{hole.classList.remove('up');
