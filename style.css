@@ -3,6 +3,11 @@ body {
     background-color: #EEC629;
 }
 
+@font-face {
+    font-family: "moonhouse";
+    src: url(fonts/moonhouse.ttf) format('woff');
+}
+
 .document{
     width: 1024px;
     height:512px;
@@ -40,7 +45,6 @@ body {
     align-items: center;
     background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
     font-family: "moonhouse";
-    src: url(/fonts/moonhouse.ttf);
     border-radius: 815px;
     color: #FFFFFF;
     display: inline-block;
@@ -56,7 +60,6 @@ body {
     align-items: center;
     background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
     font-family: "moonhouse";
-    src: url(/fonts/moonhouse.ttf);
     border-radius: 815px;
     color: #FFFFFF;
     display: inline-block;
@@ -107,7 +110,6 @@ body {
 
 .howToPlay{
     font-family: "moonhouse";
-    src: url(/fonts/moonhouse.ttf);
     color: white;
     margin-top: 50px;
     margin-left: 75px;
@@ -128,7 +130,6 @@ body {
     align-items: center;
     background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
     font-family: "moonhouse";
-    src: url(/fonts/moonhouse.ttf);
     border-radius: 815px;
     color: #FFFFFF;
     display: inline-block;
@@ -173,7 +174,6 @@ body {
 
 .score{
     font-family: "moonhouse";
-    src: url(/fonts/moonhouse.ttf);
     font-size: 70px;
     color:white;
 }
@@ -288,7 +288,6 @@ In CSS, :after creates a pseudo-element that is the last child of the selected e
 
   .endGame{
     font-family: "moonhouse";
-    src: url(/fonts/moonhouse.ttf);
     color: white;
     margin-top: 180px;
     margin-left: -70px;
@@ -315,7 +314,6 @@ In CSS, :after creates a pseudo-element that is the last child of the selected e
 #replayBtn {
     background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
     font-family: "moonhouse";
-    src: url(/fonts/moonhouse.ttf);
     border-radius: 815px;
     color: #FFFFFF;
     max-width: 100%;
@@ -331,7 +329,6 @@ In CSS, :after creates a pseudo-element that is the last child of the selected e
 #mainBtn {
     background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
     font-family: "moonhouse";
-    src: url(/fonts/moonhouse.ttf);
     border-radius: 815px;
     color: #FFFFFF;
     max-width: 100%;
